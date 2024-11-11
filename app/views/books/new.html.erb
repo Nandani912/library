@@ -1,0 +1,8 @@
+<header><%= render partial: 'partial/header'%></header>
+<body>
+<div class="form-container">
+<h1>create new book</h2>
+<%= render 'form', book: @book%> 
+<%= button_to "Home", "/books", method: :get, class: "btn btn-secondary"  %>
+</div>
+</body>

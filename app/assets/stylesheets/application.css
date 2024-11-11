@@ -1,0 +1,268 @@
+/* Importing Google Fonts for a modern, stylish look */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9e9fc); /* Gradient background */
+    color: #2d3748;
+    margin: 0;
+    padding: 30px;
+}
+
+/* Main Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow for emphasis */
+    padding: 25px;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s ease;
+    margin-top:30px;
+}
+
+
+
+.library-title {
+    text-align: center;
+    color: #1a202c;
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 25px;
+    background: linear-gradient(45deg, #007bff, #00bfff);
+    color: transparent; /* Gradient text */
+}
+
+/* Search Form */
+.search-form {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.search-form label {
+    font-weight: 600;
+    color: #4a5568;
+    margin-right: 10px;
+}
+
+.search-form input[type="search"] {
+    padding: 12px 15px;
+    border: 1px solid #cbd5e0;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-form input[type="search"]:focus {
+    border-color: #3182ce;
+    box-shadow: 0 0 10px rgba(49, 130, 206, 0.3);
+}
+
+/* Book List */
+.book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.book-item {
+    font-size: 1.1em;
+    color: #3182ce;
+    font-weight: 500;
+    padding: 15px;
+    background: #f7fafc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.book-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.book-item a {
+    text-decoration: none;
+    color: #3182ce;
+}
+
+.book-item a:hover {
+    color: #2b6cb0;
+    text-decoration: underline;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #007bff, #00bfff);
+}
+
+.btn-secondary {
+    background: linear-gradient(45deg, #28a745, #8bc34a);
+}
+
+.btn-search {
+    background: linear-gradient(45deg, #ffc107, #ff8c00);
+    color: #1a202c;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Container */
+.form-container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Field Styles */
+.field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #4a5568;
+}
+
+.field input[type="text"],
+.field textarea,
+.field select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.field input[type="text"]:focus,
+.field textarea:focus,
+.field select:focus {
+    border-color: #3182ce;
+    box-shadow: 0 0 10px rgba(49, 130, 206, 0.2);
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background: linear-gradient(45deg, #007bff, #00bfff);
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 50px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(45deg, #0056b3, #0073e6);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Book Details */
+.book-details {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.book-title {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 12px;
+}
+
+.book-author,
+.book-price,
+.book-description {
+    font-size: 1.1em;
+    color: #4a5568;
+    margin-bottom: 10px;
+}
+
+.book-price {
+    color: #38a169;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container,
+    .form-container,
+    .book-details {
+        width: 95%;
+    }
+}
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #007bff, #00bfff); /* Gradient background */
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-title {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .welcome-message {
+    margin-right: 15px;
+    font-size: 1em;
+    color: #ffffff;
+  }
+
+  .btn-logout {
+    background-color: #ff4d4d; /* Red color for logout button */
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .btn-logout:hover {
+    background-color: #e43d3d; /* Darker red on hover */
+  }

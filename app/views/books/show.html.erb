@@ -1,0 +1,16 @@
+<body>
+<header><%= render partial: 'partial/header'%></header>
+<div class="book-details">
+  <p class="book-title">Book Name:<%= @book.title %></p>
+  <p class="book-author">Book Author:<%= @book.author %></p>
+  <p class="book-price">Book Price:<%= @book.price %></p>
+  <p class="book-description">Book description:<%= @book.description %></p>
+  
+  <%= button_to "Home", "/books", method: :get, class: "btn btn-secondary" %>
+  
+  <% if user_signed_in? && current_user.owner? %>
+    <%= button_to "Edit", edit_book_path(@book), method: :get , class: "btn btn-secondary"  %>
+    <%= button_to "Delete Book", book_path(@book), method: :delete ,  class: "btn btn-secondary"%>
+  <% end %>
+</div>
+</body>
